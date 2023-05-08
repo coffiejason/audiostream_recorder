@@ -3,6 +3,8 @@ const { google } = require('googleapis');
 const fs = require('fs');
 const writeToDB = require('./db')
 
+require('dotenv').config();
+
 // Define the stream links
 const streamLinks = [
     {station:'peace_fm',link: 'https://peacefm-atunwadigital.streamguys1.com/peacefm?listening-from-radio-garden=1683350919'},
@@ -14,12 +16,12 @@ const credentials = require('./credentials.json'); // Path to your Google Drive 
 const token = require('./token.json'); // Path to your Google Drive API token file
 
 const client = new google.auth.OAuth2(
-  credentials.web.client_id,
-  credentials.web.client_secret,
-  credentials.web.redirect_uris[0]
+  process.env.CLIENT_ID,
+  process.env.CLIENT_SECRET,
+  process.env.REDIRECT_URL
 );
 
-client.setCredentials({refresh_token: token.refresh_token});
+client.setCredentials({refresh_token: process.env.REFRESH_TOKEN});
 
 const drive = google.drive({ version: 'v3', auth: client });
 
