@@ -20,8 +20,8 @@ const streamLinks = [
 ];
 
 // Configure Google Drive API
-const credentials = require('./credentials.json'); // Path to your Google Drive API credentials file
-const token = require('./token.json'); // Path to your Google Drive API token file
+//const credentials = require('./credentials.json'); // Path to your Google Drive API credentials file
+//const token = require('./token.json'); // Path to your Google Drive API token file
 
 const client = new google.auth.OAuth2(
   process.env.CLIENT_ID,
