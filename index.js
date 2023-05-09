@@ -8,7 +8,15 @@ require('dotenv').config();
 // Define the stream links
 const streamLinks = [
     {station:'peace_fm',link: 'https://peacefm-atunwadigital.streamguys1.com/peacefm?listening-from-radio-garden=1683350919'},
-    {station:'citi_fm',link:'https://citi973fm.radioca.st/;?listening-from-radio-garden=1683341725'}
+    {station:'citi_fm',link:'https://citi973fm.radioca.st/;?listening-from-radio-garden=1683341725'},
+    {station:'oyerepa_fm',link:'https://stream-051.zeno.fm/457dru9abnzuv?zs=3ago7epERPCwKFLaupowTg&listening-from-radio-garden=1683614724'},
+    {station:'three_fm',link:'https://stream-050.zeno.fm/e5qwnn42u8quv?zs=CaK-2iFsTX6H8aPAfPECXQ&listening-from-radio-garden=1683611974'},
+    {station:'asaase_fm',link:'https://n0d.radiojar.com/cyg76xcvp0hvv?listening-from-radio-garden=1683611720&rj-ttl=4&rj-tok=AAABh_9OC7wAxxNbCbf6tVWxBw'},
+    {station:'onua_fm',link:'https://stream-049.zeno.fm/hmz5ma42u8quv?zs=JXBFbNleRPacrBIoCFcXNg&listening-from-radio-garden=1683613869'},
+    {station:'kessben_fm',link:'https://kessben933fmkumasi-atunwadigital.streamguys1.com/kessben933fmkumasi?listening-from-radio-garden=1683602818'},
+    {station:'peace_fm',link:'https://peacefm-atunwadigital.streamguys1.com/peacefm?listening-from-radio-garden=1683611294'},
+    {station:'atl_fm',link:'https://atlfm.radioca.st/stream?listening-from-radio-garden=1683615371'},
+    {station:'sikka_fm',link:'https://sikkafm-atunwadigital.streamguys1.com/sikkafm?listening-from-radio-garden=1683616762'},
 ];
 
 // Configure Google Drive API
